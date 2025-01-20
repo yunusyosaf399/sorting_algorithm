@@ -1,0 +1,65 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Jan 20 16:48:47 2025
+# Process ID: 2370679
+# Current directory: /home/hp/viv_prjs/sorting_younas/sorting_algorithm
+# Command line: vivado
+# Log file: /home/hp/viv_prjs/sorting_younas/sorting_algorithm/vivado.log
+# Journal file: /home/hp/viv_prjs/sorting_younas/sorting_algorithm/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project sorting_pr /home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_pr -part xc7z020clg484-1
+set_property board_part em.avnet.com:zed:part0:1.4 [current_project]
+add_files -norecurse {/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_v1_0/sorting_top_tb.sv /home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_v1_0/counter.sv /home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_v1_0/regn.sv /home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_v1_0/controller.sv /home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_v1_0/sorting_top.sv /home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_v1_0/ram.sv /home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_v1_0/datapth.sv}
+update_compile_order -fileset sources_1
+launch_simulation
+source sorting_top_tb.tcl
+save_wave_config {/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_pr/sorting_top_tb_behav.wcfg}
+save_wave_config {/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_pr/sorting_top_tb_behav.wcfg}
+relaunch_sim
+save_wave_config {/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_pr/sorting_top_tb_behav.wcfg}
+save_wave_config {/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_pr/sorting_top_tb_behav.wcfg}
+save_wave_config {/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_pr/sorting_top_tb_behav.wcfg}
+restart
+run 400 ns
+relaunch_sim
+relaunch_sim
+save_wave_config {/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_pr/sorting_top_tb_behav.wcfg}
+save_wave_config {/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_pr/sorting_top_tb_behav.wcfg}
+relaunch_sim
+relaunch_sim
+relaunch_sim
+restart
+run 400 ns
+save_wave_config {/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_pr/sorting_top_tb_behav.wcfg}
+relaunch_sim
+save_wave_config {/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_pr/sorting_top_tb_behav.wcfg}
+save_wave_config {/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_pr/sorting_top_tb_behav.wcfg}
+save_wave_config {/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_pr/sorting_top_tb_behav.wcfg}
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_pr/sorting_top_tb_behav.wcfg}
+save_wave_config {/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_pr/sorting_top_tb_behav.wcfg}
+relaunch_sim
+relaunch_sim
+save_wave_config {/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_pr/sorting_top_tb_behav.wcfg}
+save_wave_config {/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_pr/sorting_top_tb_behav.wcfg}
+save_wave_config {/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_pr/sorting_top_tb_behav.wcfg}
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_pr/sorting_top_tb_behav.wcfg}
+relaunch_sim
+save_wave_config {/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_pr/sorting_top_tb_behav.wcfg}
+save_wave_config {/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_pr/sorting_top_tb_behav.wcfg}
+save_wave_config {/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_pr/sorting_top_tb_behav.wcfg}
+save_wave_config {/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_pr/sorting_top_tb_behav.wcfg}
+save_wave_config {/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_pr/sorting_top_tb_behav.wcfg}
+close_sim

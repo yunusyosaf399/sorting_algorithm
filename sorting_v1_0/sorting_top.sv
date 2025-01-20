@@ -17,7 +17,7 @@ module sorting_top #(
     wire zi, zj, AgtB;
 
     datapath #(.N(N), .L(L)) dp (
-        .clk(clk), .rst(rst), .Rd(Rd), .WrInit(WrInit), .RAddr(RAddr), .DataIn(DataIn),
+        .clk(clk), .rst(rst), .start(start), .Rd(Rd), .WrInit(WrInit), .RAddr(RAddr), .DataIn(DataIn),
         .Wr(Wr), .Li(Li), .Ei(Ei), .Lj(Lj), .Ej(Ej), .EA(EA), .EB(EB), .Csel(Csel), .Bout(Bout),
         .DataOut(DataOut), .zi(zi), .zj(zj), .AgtB(AgtB)
     );

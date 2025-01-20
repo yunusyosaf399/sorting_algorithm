@@ -1,5 +1,3 @@
-`timescale 1ns / 1ps
-
 module sorting_top_tb;
 
     // Parameters
@@ -7,7 +5,8 @@ module sorting_top_tb;
     parameter L = 4; // Width of counters and address
 
     // Testbench signals
-    reg clk, rst, Rd, WrInit, start;
+    reg clk;
+    reg rst, Rd, WrInit, start;
     reg [L-1:0] RAddr;
     reg [N-1:0] DataIn;
     wire [N-1:0] DataOut;
@@ -17,7 +16,10 @@ module sorting_top_tb;
     reg [N-1:0] predefined_values [7:0];
 
     // Clock generation
-    always #5 clk = ~clk; // 10 ns clock period (100 MHz)
+    initial begin
+        clk = 1;                // Initialize clock
+        forever #5 clk = ~clk;  // 10 ns clock period
+    end
 
     // DUT instantiation
     sorting_top #(.N(N), .L(L)) sorting_top1 (
@@ -42,12 +44,6 @@ module sorting_top_tb;
         predefined_values[5] = 8'd89;
         predefined_values[6] = 8'd23;
         predefined_values[7] = 8'd67;
-    end
-
-    // Clock generation for 100 MHz
-    initial begin
-        clk = 0;
-        forever #5 clk = ~clk; // 10 ns clock period
     end
 
     // Task to initialize RAM with predefined values
@@ -103,7 +99,7 @@ module sorting_top_tb;
         DataIn = 0;     // No data input yet
 
         // Apply reset
-        @(posedge clk);
+        repeat (2) @(posedge clk);
         rst = 0; // Deassert reset
 
         // Initialize RAM with predefined values

@@ -1,0 +1,12 @@
+0.6
+2018.2
+Jun 14 2018
+20:07:38
+/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_pr/sorting_pr.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_v1_0/controller.sv,1737375850,systemVerilog,,/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_v1_0/counter.sv,,controller,,,,,,,,
+/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_v1_0/counter.sv,1737373109,systemVerilog,,/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_v1_0/datapth.sv,,counter,,,,,,,,
+/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_v1_0/datapth.sv,1737379516,systemVerilog,,/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_v1_0/ram.sv,,datapath,,,,,,,,
+/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_v1_0/ram.sv,1737379431,systemVerilog,,/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_v1_0/regn.sv,,RAM,,,,,,,,
+/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_v1_0/regn.sv,1737373109,systemVerilog,,/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_v1_0/sorting_top.sv,,regn,,,,,,,,
+/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_v1_0/sorting_top.sv,1737373109,systemVerilog,,/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_v1_0/sorting_top_tb.sv,,sorting_top,,,,,,,,
+/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_v1_0/sorting_top_tb.sv,1737378248,systemVerilog,,,,sorting_top_tb,,,,,,,,
