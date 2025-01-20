@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module sorting_top_tb;
 
     // Parameters
@@ -30,18 +32,8 @@ module sorting_top_tb;
         .done(done)
     );
 
-    // Testbench process
+    // Initialize the predefined array
     initial begin
-        // Initialize signals
-        clk = 0;
-        rst = 1;
-        Rd = 0;
-        WrInit = 0;
-        start = 0;
-        RAddr = 0;
-        DataIn = 0;
-
-        // Initialize the predefined array
         predefined_values[0] = 8'd45;
         predefined_values[1] = 8'd12;
         predefined_values[2] = 8'd78;
@@ -50,35 +42,90 @@ module sorting_top_tb;
         predefined_values[5] = 8'd89;
         predefined_values[6] = 8'd23;
         predefined_values[7] = 8'd67;
+    end
 
-        // Reset
-        #20 rst = 0;
+    // Clock generation for 100 MHz
+    initial begin
+        clk = 0;
+        forever #5 clk = ~clk; // 10 ns clock period
+    end
 
-        // Load 8 values into memory
-        WrInit = 1; // Enable write initialization
-        for (integer i = 0; i < 8; i = i + 1) begin
-            DataIn = predefined_values[i];
-            RAddr = i;
-            #10; // Wait for a clock cycle
+    // Task to initialize RAM with predefined values
+    task initialize_ram;
+        input [N-1:0] data [0:7]; // Max 8 data items
+        integer i;
+        begin
+            for (i = 0; i < 8; i = i + 1) begin
+                WrInit = 1'b1;
+                RAddr = i;             // Set the address
+                DataIn = data[i];      // Set the data to write
+                @(posedge clk);        // Wait for a clock edge
+            end
+            WrInit = 1'b0;             // Disable write
+            DataIn = 0;                // Reset data input
         end
-        WrInit = 0;
+    endtask
 
-        // Start sorting
-        start = 1;
-        #10 start = 0;
+    // Task to display RAM contents after sorting
+    task display_ram_contents;
+        integer i;
+        begin
+            $display("RAM contents:");
+            for (i = 0; i < 8; i = i + 1) begin
+                Rd = 1'b1;
+                RAddr = i;
+                @(posedge clk);
+                $display("RAM[%0d] = %0d", i, DataOut);
+            end
+            Rd = 1'b0;
+        end
+    endtask
 
-        // Wait for sorting to complete
+    // Testbench logic
+    initial begin
+        // Test data for sorting
+        reg [N-1:0] test_data [0:7];
+        test_data[0] = 8'd45;
+        test_data[1] = 8'd12;
+        test_data[2] = 8'd78;
+        test_data[3] = 8'd34;
+        test_data[4] = 8'd56;
+        test_data[5] = 8'd89;
+        test_data[6] = 8'd23;
+        test_data[7] = 8'd67;
+
+        // Initialize signals
+        rst = 1;        // Assert reset
+        WrInit = 0;     // Disable write initialization
+        Rd = 0;         // Disable read
+        start = 0;      // Don't start the sorting yet
+        RAddr = 0;      // Address 0 initially
+        DataIn = 0;     // No data input yet
+
+        // Apply reset
+        @(posedge clk);
+        rst = 0; // Deassert reset
+
+        // Initialize RAM with predefined values
+        initialize_ram(test_data);
+
+        // Display RAM contents before sorting
+        $display("RAM contents before sorting:");
+        display_ram_contents();
+
+        // Start sorting operation
+        @(posedge clk);
+        start = 1; // Set start to 1
+        @(posedge clk);
+        start = 0; // Set start to 0 to trigger sorting
+
+        // Wait for sorting to complete (done signal)
         wait(done);
+        $display("Sorting completed.");
 
-        // Read sorted values
-        Rd = 1; // Enable read
-        RAddr = 0;
-        for (integer i = 0; i < 8; i = i + 1) begin
-            #10; // Wait for a clock cycle
-            $display("Sorted value [%0d]: %0d", RAddr, DataOut);
-            RAddr = i + 1;
-        end
-        Rd = 0;
+        // Display RAM contents after sorting
+        $display("RAM contents after sorting:");
+        display_ram_contents();
 
         // End simulation
         $finish;
