@@ -1,0 +1,20 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto a63f2c10d0fb4459b8a24459d2516063 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sorting_top_tb_behav xil_defaultlib.sorting_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port d [/home/younas/Music/up/sorting_v1_0/datapth.sv:53]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/home/younas/Music/up/sorting_pr/sorting_pr.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.RAM(addr_width=4)
+Compiling module xil_defaultlib.regn(N=8)
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.sorting_top
+Compiling module xil_defaultlib.sorting_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sorting_top_tb_behav
