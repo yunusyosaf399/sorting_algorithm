@@ -1,12 +1,12 @@
 # compile verilog/system verilog design source files
 sv xil_defaultlib  \
-"../../../../../sorting_v1_0/controller.sv" \
-"../../../../../sorting_v1_0/counter.sv" \
-"../../../../../sorting_v1_0/datapth.sv" \
-"../../../../../sorting_v1_0/ram.sv" \
-"../../../../../sorting_v1_0/regn.sv" \
-"../../../../../sorting_v1_0/sorting_top.sv" \
-"../../../../../sorting_v1_0/sorting_top_tb.sv" \
+"../../../../controller.sv" \
+"../../../../counter.sv" \
+"../../../../datapath.sv" \
+"../../../../ram.sv" \
+"../../../../regn.sv" \
+"../../../../sorting_top.sv" \
+"../../../../sorting_top_tb.sv" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"

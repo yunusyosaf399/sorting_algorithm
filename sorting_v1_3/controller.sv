@@ -8,16 +8,16 @@ module controller(
     input wire zi,          // (i == K-2)
     input wire zj,          // (j == K-1)  
     
-    output reg Wr,         // Write signal
-    output reg Li,         // Load counter i
-    output reg Ei,         // Enable counter i
-    output reg Lj,         // Load counter j
-    output reg Ej,         // Enable counter j
-    output reg EA,         // Enable register A
-    output reg EB,         // Enable register B
-    output reg Bout,       // Select signal to select between A & B
-    output reg Csel,       // Select signal to select between i & j
-    output reg done        // Execution done
+    output wire Wr,         // Write signal
+    output wire Li,         // Load counter i
+    output wire Ei,         // Enable counter i
+    output wire Lj,         // Load counter j
+    output wire Ej,         // Enable counter j
+    output wire EA,         // Enable register A
+    output wire EB,         // Enable register B
+    output wire Bout,       // Select signal to select between A & B
+    output wire Csel,       // Select signal to select between i & j
+    output wire done        // Execution done
 );
 
    // State register and parameters for states
@@ -34,109 +34,85 @@ module controller(
 
    // Sequential block for state transitions and output assignments
  always @(posedge clk or posedge rst) begin
-       if (rst) begin
-           state <= S0;  
-           done  <= 0;
-           Wr    <= 0;
-           Li    <= 0;
-           Ei    <= 0;
-           Lj    <= 0;
-           Ej    <= 0;
-           EA    <= 0;
-           EB    <= 0;
-           Bout  <= 0;
-           Csel  <= 0;
-       end else begin
-           // Default values to prevent latches
-           done  <= 0;
-           Wr    <= 0;
-           Li    <= 0;
-           Ei    <= 0;
-           Lj    <= 0;
-           Ej    <= 0;
-           EA    <= 0;
-           EB    <= 0;
-           Bout  <= 0;
-           Csel  <= 0;
+    if (rst) begin
+        state <= S0;  
+    end else begin   
    
-   
-         if(start == 1'b1) begin
-           case (state)
-             S0: begin
-                 // Initialize `i` to 0
-                 Li <= 1;
-                 Ei <= 1; // Start counter `i`
-                 state <= S1;
-             end
-         
-             S1: begin
-                 // Load `A` with `Mi`
-                 EA   <= 1;
-                 Csel <= 0; // Select `i`
-                 Lj   <= 1;
-                 Ej   <= 1; // Start counter `j`
-                 state <= S2;
-             end
-         
-             S2: begin
-                 // Load `B` with `Mj`
-                 EB   <= 1;
-                 Csel <= 1; // Select `j`
-                 state <= S3;
-             end
-         
-             S3: begin
-                 if (AgtB) 
-                     state <= S4;  // If `A > B`, perform swap
-                 else 
-                     state <= S6;  // Otherwise, increment `j`
-             end
-         
-             S4: begin
-                 // Write `B` to `Mi`
-                 Wr   <= 1;
-                 Csel <= 0; // Select `i`
-                 Bout <= 1; // Select `B`
-                 state <= S5;
-             end
-         
-             S5: begin
-                 // Write `A` to `Mj`
-                 Wr   <= 1;
-                 Csel <= 1; // Select `j`
-                 Bout <= 0; // Select `A`
-                 state <= S6;
-             end
-         
-             S6: begin
-                 // Increment `j` or `i`
-                 if (zj) begin
-                     if (zi) begin
-                         state <= S7; // End condition
-                     end else begin
-                         Ei    <= 1;  // Increment `i`
-                         state <= S1; // Restart loop with new `i`
-                     end
-                 end else begin
-                     Ej    <= 1; // Increment `j`
-                     state <= S2; // Continue with `j`
-                 end
-             end
-         
-             S7: begin
-                 done <= 1; // Sorting complete
-             end
-         
-             default: begin
-                 state <= S0;
-             end
-         endcase
+        case (state)
+            S0: begin
+            if (start) begin
+                state <= S1;
+            end
+            else 
+                state <= S0;
+            end
 
-       end
-   end
-   
-   end
+            S1: begin
+                state <= S2;
+            end
 
+            S2: begin
+                state <= S3;
+            end
 
+            S3: begin
+                if (AgtB)
+                    state <= S4;
+                else
+                    if (zj) 
+                        if (zi)
+                            state <= S7;  
+                        else 
+                            state <= S1;
+                    else 
+                        state <= S2;  
+            end
+
+            S4: begin
+                state <= S5;
+            end
+
+            S5: begin
+                state <= S6;
+            end
+
+            S6: begin
+                if (zj) 
+                    if (zi) 
+                        state <= S7; // End condition
+                    else 
+                        state <= S1; // Restart loop with new `i`
+                else 
+                    state <= S2; // Continue with `j`
+                
+            end
+
+            S7: begin
+                if (start)
+                    state <= S0;
+                else 
+                    state <= S7;
+            end
+
+            default: begin
+                state <= S0;
+            end
+        endcase
+    end
+end
+
+assign Li = (state == S0) ? 1'b1 : 1'b0;
+assign Ei = (state == S0) || (state == S3 && (zj == 1) && (zi == 0)) ? 1'b1 : 1'b0;
+
+assign EA    = (state == S1) || (state == S6) ? 1'b1 : 1'b0;
+assign Lj    = (state == S1) ? 1'b1 : 1'b0;
+assign Ej    = (state == S1) || (state == S3 && (zj == 0)) ? 1'b1 : 1'b0;
+
+assign Csel  = (state == S2) || (state == S5) ? 1'b1 : 1'b0;
+assign EB    = (state == S2) ? 1'b1 : 1'b0;
+
+assign Wr    = (state == S4) || (state == S5) ? 1'b1 : 1'b0;
+assign Bout  = (state == S4) ? 1'b1 : 1'b0;
+assign done  = (state == S7) ? 1'b1 : 1'b0;
 
 endmodule

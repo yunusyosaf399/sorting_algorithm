@@ -73,6 +73,7 @@ module sorting_top_tb;
                 @(posedge clk);
                 $display("RAM[%0d] = %0d", i, DataOut);
             end
+            #10
             Rd = 1'b0;
         end
     endtask
@@ -105,14 +106,19 @@ module sorting_top_tb;
         // Initialize RAM with predefined values
         initialize_ram(test_data);
 
+        RAddr = 0;
+        #10
+
         // Display RAM contents before sorting
         $display("RAM contents before sorting:");
         display_ram_contents();
 
         // Start sorting operation
-        @(posedge clk);
+        @(negedge clk);
         start = 1; // Set start to 1
+
         // Wait for sorting to complete (done signal)
+        RAddr = 0;
         wait(done);
         start = 0;
         $display("Sorting completed.");

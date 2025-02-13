@@ -1,14 +1,14 @@
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Music/up/sorting_v1_0/controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_v1_3/controller.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module controller
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Music/up/sorting_v1_0/counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_v1_3/counter.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module counter
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Music/up/sorting_v1_0/datapth.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_v1_3/datapath.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module datapath
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Music/up/sorting_v1_0/ram.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_v1_3/ram.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module RAM
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Music/up/sorting_v1_0/regn.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_v1_3/regn.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module regn
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Music/up/sorting_v1_0/sorting_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_v1_3/sorting_top.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module sorting_top
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Music/up/sorting_v1_0/sorting_top_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_v1_3/sorting_top_tb.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module sorting_top_tb
