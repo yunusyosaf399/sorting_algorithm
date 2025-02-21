@@ -40,11 +40,29 @@ This project implements a hardware-based **sorting algorithm** using Verilog, fe
    - RAM contents can be read to verify the sorted order.
 
 ## 🛠️ Simulation & Testing
+We are using **SystemVerilog**, we will run the simulation using **Vivado XSIM**.
 
-### **1️⃣ Running the Simulation**
-Use a Verilog simulator such as **ModelSim, VCS, or Icarus Verilog** to simulate the design.
+### 1️⃣ Running the Simulation
+1. Open **Vivado 2018.2**.
+2. Load the project or create a new one.
+3. Ensure all **SystemVerilog files** (`.sv`) are added to the project.
 
-#### **Using Icarus Verilog (`iverilog`):**
-```sh
-iverilog -o sorting_test sorting_top_tb.v sorting_top.v controller.v datapath.v RAM.v
-vvp sorting_test
+### 2️⃣ Set Up Simulation
+- In the **Flow Navigator**, go to **Simulation → Simulation Settings**.
+- Under **Compilation Options**, enable **SystemVerilog** support.
+- Set **Simulation Run Time** (e.g., `10ns`).
+- Choose **Behavioral Simulation**.
+
+### 3️⃣ Run the Simulation
+- Click **Run Simulation → Run Behavioral Simulation**.
+- Use Vivado’s **Waveform Viewer** to inspect results.
+
+### 4️⃣ Debugging & Analysis
+- Check the **console** for errors/warnings.
+- Add **signals** to the waveform for better visibility.
+- Use `assertions` and `$display` for debugging.
+
+## ✅ Why Use SystemVerilog?
+- Supports **object-oriented testbenches**.
+- More **advanced assertions & functional coverage**.
+- Easier to write **self-checking testbenches**.
