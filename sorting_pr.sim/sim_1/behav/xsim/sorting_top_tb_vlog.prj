@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../controller.sv" \
+"../../../../counter.sv" \
+"../../../../datapath.sv" \
+"../../../../ram.sv" \
+"../../../../regn.sv" \
+"../../../../sorting_top.sv" \
+"../../../../sorting_top_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

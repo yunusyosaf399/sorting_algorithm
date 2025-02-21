@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="sorting_top_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="sorting_top_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="843913200fs"></ZoomStartTime>
+      <ZoomEndTime time="948513201fs"></ZoomEndTime>
+      <Cursor1Time time="360000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="185"></NameColumnWidth>
+      <ValueColumnWidth column_width="66"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="5" />
+   <wvobject type="group" fp_name="group13">
+      <obj_property name="label">tb sigs</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/sorting_top_tb/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/rst">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sorting_top_tb/predefined_values">
+         <obj_property name="ElementShortName">predefined_values[7:0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">predefined_values[7:0][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/start">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sorting_top_tb/DataIn">
+         <obj_property name="ElementShortName">DataIn[7:0]</obj_property>
+         <obj_property name="ObjectShortName">DataIn[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/WrInit">
+         <obj_property name="ElementShortName">WrInit</obj_property>
+         <obj_property name="ObjectShortName">WrInit</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sorting_top_tb/RAddr">
+         <obj_property name="ElementShortName">RAddr[3:0]</obj_property>
+         <obj_property name="ObjectShortName">RAddr[3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/Rd">
+         <obj_property name="ElementShortName">Rd</obj_property>
+         <obj_property name="ObjectShortName">Rd</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sorting_top_tb/DataOut">
+         <obj_property name="ElementShortName">DataOut[7:0]</obj_property>
+         <obj_property name="ObjectShortName">DataOut[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group14">
+      <obj_property name="label">sorting_top sigs</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/rst">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/Rd">
+         <obj_property name="ElementShortName">Rd</obj_property>
+         <obj_property name="ObjectShortName">Rd</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/WrInit">
+         <obj_property name="ElementShortName">WrInit</obj_property>
+         <obj_property name="ObjectShortName">WrInit</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sorting_top_tb/sorting_top1/RAddr">
+         <obj_property name="ElementShortName">RAddr[3:0]</obj_property>
+         <obj_property name="ObjectShortName">RAddr[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sorting_top_tb/sorting_top1/DataIn">
+         <obj_property name="ElementShortName">DataIn[7:0]</obj_property>
+         <obj_property name="ObjectShortName">DataIn[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/start">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sorting_top_tb/sorting_top1/DataOut">
+         <obj_property name="ElementShortName">DataOut[7:0]</obj_property>
+         <obj_property name="ObjectShortName">DataOut[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/done">
+         <obj_property name="ElementShortName">done</obj_property>
+         <obj_property name="ObjectShortName">done</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/Wr">
+         <obj_property name="ElementShortName">Wr</obj_property>
+         <obj_property name="ObjectShortName">Wr</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/Li">
+         <obj_property name="ElementShortName">Li</obj_property>
+         <obj_property name="ObjectShortName">Li</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/Ei">
+         <obj_property name="ElementShortName">Ei</obj_property>
+         <obj_property name="ObjectShortName">Ei</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/Lj">
+         <obj_property name="ElementShortName">Lj</obj_property>
+         <obj_property name="ObjectShortName">Lj</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/Ej">
+         <obj_property name="ElementShortName">Ej</obj_property>
+         <obj_property name="ObjectShortName">Ej</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/EA">
+         <obj_property name="ElementShortName">EA</obj_property>
+         <obj_property name="ObjectShortName">EA</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/EB">
+         <obj_property name="ElementShortName">EB</obj_property>
+         <obj_property name="ObjectShortName">EB</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/Csel">
+         <obj_property name="ElementShortName">Csel</obj_property>
+         <obj_property name="ObjectShortName">Csel</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/Bout">
+         <obj_property name="ElementShortName">Bout</obj_property>
+         <obj_property name="ObjectShortName">Bout</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/zi">
+         <obj_property name="ElementShortName">zi</obj_property>
+         <obj_property name="ObjectShortName">zi</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/zj">
+         <obj_property name="ElementShortName">zj</obj_property>
+         <obj_property name="ObjectShortName">zj</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/AgtB">
+         <obj_property name="ElementShortName">AgtB</obj_property>
+         <obj_property name="ObjectShortName">AgtB</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group36">
+      <obj_property name="label">sorting_dp sigs</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/dp/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/dp/rst">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/start">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sorting_top_tb/sorting_top1/ctrl/state">
+         <obj_property name="ElementShortName">state[4:0]</obj_property>
+         <obj_property name="ObjectShortName">state[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/done">
+         <obj_property name="ElementShortName">done</obj_property>
+         <obj_property name="ObjectShortName">done</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/dp/EA">
+         <obj_property name="ElementShortName">EA</obj_property>
+         <obj_property name="ObjectShortName">EA</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/dp/EB">
+         <obj_property name="ElementShortName">EB</obj_property>
+         <obj_property name="ObjectShortName">EB</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/dp/Bout">
+         <obj_property name="ElementShortName">Bout</obj_property>
+         <obj_property name="ObjectShortName">Bout</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/dp/Csel">
+         <obj_property name="ElementShortName">Csel</obj_property>
+         <obj_property name="ObjectShortName">Csel</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/dp/Wr">
+         <obj_property name="ElementShortName">Wr</obj_property>
+         <obj_property name="ObjectShortName">Wr</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/dp/Li">
+         <obj_property name="ElementShortName">Li</obj_property>
+         <obj_property name="ObjectShortName">Li</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/dp/Lj">
+         <obj_property name="ElementShortName">Lj</obj_property>
+         <obj_property name="ObjectShortName">Lj</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/dp/Ei">
+         <obj_property name="ElementShortName">Ei</obj_property>
+         <obj_property name="ObjectShortName">Ei</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/dp/Ej">
+         <obj_property name="ElementShortName">Ej</obj_property>
+         <obj_property name="ObjectShortName">Ej</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/ctrl/AgtB">
+         <obj_property name="ElementShortName">AgtB</obj_property>
+         <obj_property name="ObjectShortName">AgtB</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sorting_top_tb/sorting_top1/dp/regA_out">
+         <obj_property name="ElementShortName">regA_out[7:0]</obj_property>
+         <obj_property name="ObjectShortName">regA_out[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FF0080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sorting_top_tb/sorting_top1/dp/regB_out">
+         <obj_property name="ElementShortName">regB_out[7:0]</obj_property>
+         <obj_property name="ObjectShortName">regB_out[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FF0080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sorting_top_tb/sorting_top1/dp/cntr_i">
+         <obj_property name="ElementShortName">cntr_i[3:0]</obj_property>
+         <obj_property name="ObjectShortName">cntr_i[3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sorting_top_tb/sorting_top1/dp/cntr_j">
+         <obj_property name="ElementShortName">cntr_j[3:0]</obj_property>
+         <obj_property name="ObjectShortName">cntr_j[3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sorting_top_tb/sorting_top1/dp/mux1_out">
+         <obj_property name="ElementShortName">mux1_out[3:0]</obj_property>
+         <obj_property name="ObjectShortName">mux1_out[3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sorting_top_tb/sorting_top1/dp/Mij">
+         <obj_property name="ElementShortName">Mij[7:0]</obj_property>
+         <obj_property name="ObjectShortName">Mij[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="divider203" type="divider">
+         <obj_property name="label">.</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/dp/Rd">
+         <obj_property name="ElementShortName">Rd</obj_property>
+         <obj_property name="ObjectShortName">Rd</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/dp/WrInit">
+         <obj_property name="ElementShortName">WrInit</obj_property>
+         <obj_property name="ObjectShortName">WrInit</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sorting_top_tb/sorting_top1/dp/DataIn">
+         <obj_property name="ElementShortName">DataIn[7:0]</obj_property>
+         <obj_property name="ObjectShortName">DataIn[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sorting_top_tb/sorting_top1/dp/RAddr">
+         <obj_property name="ElementShortName">RAddr[3:0]</obj_property>
+         <obj_property name="ObjectShortName">RAddr[3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sorting_top_tb/sorting_top1/dp/mux2_out">
+         <obj_property name="ElementShortName">mux2_out[3:0]</obj_property>
+         <obj_property name="ObjectShortName">mux2_out[3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/dp/start">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/dp/zi">
+         <obj_property name="ElementShortName">zi</obj_property>
+         <obj_property name="ObjectShortName">zi</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/dp/zj">
+         <obj_property name="ElementShortName">zj</obj_property>
+         <obj_property name="ObjectShortName">zj</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/dp/AgtB">
+         <obj_property name="ElementShortName">AgtB</obj_property>
+         <obj_property name="ObjectShortName">AgtB</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sorting_top_tb/sorting_top1/dp/regA_out">
+         <obj_property name="ElementShortName">regA_out[7:0]</obj_property>
+         <obj_property name="ObjectShortName">regA_out[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sorting_top_tb/sorting_top1/dp/regB_out">
+         <obj_property name="ElementShortName">regB_out[7:0]</obj_property>
+         <obj_property name="ObjectShortName">regB_out[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sorting_top_tb/sorting_top1/dp/mux3_out">
+         <obj_property name="ElementShortName">mux3_out[7:0]</obj_property>
+         <obj_property name="ObjectShortName">mux3_out[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sorting_top_tb/sorting_top1/dp/mux4_out">
+         <obj_property name="ElementShortName">mux4_out[7:0]</obj_property>
+         <obj_property name="ObjectShortName">mux4_out[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sorting_top_tb/sorting_top1/dp/ABmux">
+         <obj_property name="ElementShortName">ABmux[7:0]</obj_property>
+         <obj_property name="ObjectShortName">ABmux[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/Rd">
+         <obj_property name="ElementShortName">Rd</obj_property>
+         <obj_property name="ObjectShortName">Rd</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sorting_top_tb/sorting_top1/dp/DataOut">
+         <obj_property name="ElementShortName">DataOut[7:0]</obj_property>
+         <obj_property name="ObjectShortName">DataOut[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group71">
+      <obj_property name="label">sorting_controller sigs</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/ctrl/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/ctrl/rst">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sorting_top_tb/sorting_top1/ctrl/state">
+         <obj_property name="ElementShortName">state[4:0]</obj_property>
+         <obj_property name="ObjectShortName">state[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sorting_top_tb/sorting_top1/ctrl/state">
+         <obj_property name="ElementShortName">state[4:0]</obj_property>
+         <obj_property name="ObjectShortName">state[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/ctrl/start">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/ctrl/Wr">
+         <obj_property name="ElementShortName">Wr</obj_property>
+         <obj_property name="ObjectShortName">Wr</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/ctrl/zi">
+         <obj_property name="ElementShortName">zi</obj_property>
+         <obj_property name="ObjectShortName">zi</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/ctrl/zj">
+         <obj_property name="ElementShortName">zj</obj_property>
+         <obj_property name="ObjectShortName">zj</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/ctrl/Li">
+         <obj_property name="ElementShortName">Li</obj_property>
+         <obj_property name="ObjectShortName">Li</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/ctrl/Ei">
+         <obj_property name="ElementShortName">Ei</obj_property>
+         <obj_property name="ObjectShortName">Ei</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/ctrl/Lj">
+         <obj_property name="ElementShortName">Lj</obj_property>
+         <obj_property name="ObjectShortName">Lj</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/ctrl/Ej">
+         <obj_property name="ElementShortName">Ej</obj_property>
+         <obj_property name="ObjectShortName">Ej</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/ctrl/EA">
+         <obj_property name="ElementShortName">EA</obj_property>
+         <obj_property name="ObjectShortName">EA</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/ctrl/EB">
+         <obj_property name="ElementShortName">EB</obj_property>
+         <obj_property name="ObjectShortName">EB</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/ctrl/Bout">
+         <obj_property name="ElementShortName">Bout</obj_property>
+         <obj_property name="ObjectShortName">Bout</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/ctrl/Csel">
+         <obj_property name="ElementShortName">Csel</obj_property>
+         <obj_property name="ObjectShortName">Csel</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sorting_top_tb/sorting_top1/dp/Mij">
+         <obj_property name="ElementShortName">Mij[7:0]</obj_property>
+         <obj_property name="ObjectShortName">Mij[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/ctrl/done">
+         <obj_property name="ElementShortName">done</obj_property>
+         <obj_property name="ObjectShortName">done</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group91">
+      <obj_property name="label">RAM sigs</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/sorting_top_tb/sorting_top1/dp/Mij">
+         <obj_property name="ElementShortName">Mij[7:0]</obj_property>
+         <obj_property name="ObjectShortName">Mij[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/dp/RAM_inst/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/dp/RAM_inst/rst">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/sorting_top_tb/sorting_top1/dp/RAM_inst/we">
+         <obj_property name="ElementShortName">we</obj_property>
+         <obj_property name="ObjectShortName">we</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sorting_top_tb/sorting_top1/dp/RAM_inst/addr">
+         <obj_property name="ElementShortName">addr[3:0]</obj_property>
+         <obj_property name="ObjectShortName">addr[3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sorting_top_tb/sorting_top1/dp/RAM_inst/din">
+         <obj_property name="ElementShortName">din[7:0]</obj_property>
+         <obj_property name="ObjectShortName">din[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sorting_top_tb/sorting_top1/dp/RAM_inst/dout">
+         <obj_property name="ElementShortName">dout[7:0]</obj_property>
+         <obj_property name="ObjectShortName">dout[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/sorting_top_tb/sorting_top1/dp/RAM_inst/ram_memory">
+         <obj_property name="ElementShortName">ram_memory[0:15][7:0]</obj_property>
+         <obj_property name="ObjectShortName">ram_memory[0:15][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,1108 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Feb 20 12:59:41 2025
+# Process ID: 2614788
+# Current directory: /home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4
+# Command line: vivado sorting_pr.xpr
+# Log file: /home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/vivado.log
+# Journal file: /home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project sorting_pr.xpr
+INFO: [Project 1-313] Project file moved from '/home/hp/viv_prjs/sorting_younas/sorting_algorithm/sorting_v1_3' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sorting_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj sorting_top_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/ram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/regn.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regn
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sorting_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sorting_top_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto a63f2c10d0fb4459b8a24459d2516063 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sorting_top_tb_behav xil_defaultlib.sorting_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port d [/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/datapath.sv:53]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.RAM(addr_width=4)
+Compiling module xil_defaultlib.regn(N=8)
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.sorting_top
+Compiling module xil_defaultlib.sorting_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sorting_top_tb_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source /home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim/xsim.dir/sorting_top_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Feb 20 13:00:22 2025...
+run_program: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 6130.910 ; gain = 0.000 ; free physical = 242 ; free virtual = 9890
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sorting_top_tb_behav -key {Behavioral:sim_1:Functional:sorting_top_tb} -tclbatch {sorting_top_tb.tcl} -view {/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config /home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top_tb_behav.wcfg
+source sorting_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+RAM contents before sorting:
+RAM contents:
+RAM[0] = 67
+RAM[1] = 45
+RAM[2] = 12
+RAM[3] = 78
+RAM[4] = 34
+RAM[5] = 56
+RAM[6] = 89
+RAM[7] = 23
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sorting_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 6183.723 ; gain = 52.812 ; free physical = 224 ; free virtual = 9879
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 6205.977 ; gain = 0.000 ; free physical = 197 ; free virtual = 9810
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sorting_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj sorting_top_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/ram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/regn.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regn
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sorting_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sorting_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto a63f2c10d0fb4459b8a24459d2516063 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sorting_top_tb_behav xil_defaultlib.sorting_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port d [/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/datapath.sv:53]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.RAM(addr_width=4)
+Compiling module xil_defaultlib.regn(N=8)
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.sorting_top
+Compiling module xil_defaultlib.sorting_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sorting_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+RAM contents before sorting:
+RAM contents:
+RAM[0] = 67
+RAM[1] = 45
+RAM[2] = 12
+RAM[3] = 78
+RAM[4] = 34
+RAM[5] = 56
+RAM[6] = 89
+RAM[7] = 23
+FATAL_ERROR: Iteration limit 10000 is reached. Possible zero delay oscillation detected where simulation time can not advance. Please check your source code. Note that the iteration limit can be changed using switch -maxdeltaid.
+Time: 195 ns  Iteration: 10000
+relaunch_sim: Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 6205.977 ; gain = 0.000 ; free physical = 225 ; free virtual = 9830
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sorting_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj sorting_top_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/ram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/regn.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regn
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sorting_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sorting_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto a63f2c10d0fb4459b8a24459d2516063 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sorting_top_tb_behav xil_defaultlib.sorting_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port d [/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/datapath.sv:53]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.RAM(addr_width=4)
+Compiling module xil_defaultlib.regn(N=8)
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.sorting_top
+Compiling module xil_defaultlib.sorting_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sorting_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+RAM contents before sorting:
+RAM contents:
+RAM[0] = 67
+RAM[1] = 45
+RAM[2] = 12
+RAM[3] = 78
+RAM[4] = 34
+RAM[5] = 56
+RAM[6] = 89
+RAM[7] = 23
+run 10 us
+Sorting completed.
+RAM contents after sorting:
+RAM contents:
+RAM[0] = 45
+RAM[1] = 45
+RAM[2] = 12
+RAM[3] = 45
+RAM[4] = 45
+RAM[5] = 45
+RAM[6] = 45
+RAM[7] = 45
+$finish called at time : 1650 ns : File "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top_tb.sv" Line 131
+run 10 us
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sorting_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj sorting_top_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/ram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/regn.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regn
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sorting_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sorting_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto a63f2c10d0fb4459b8a24459d2516063 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sorting_top_tb_behav xil_defaultlib.sorting_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port d [/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/datapath.sv:53]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.RAM(addr_width=4)
+Compiling module xil_defaultlib.regn(N=8)
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.sorting_top
+Compiling module xil_defaultlib.sorting_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sorting_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+RAM contents before sorting:
+RAM contents:
+RAM[0] = 67
+RAM[1] = 45
+RAM[2] = 12
+RAM[3] = 78
+RAM[4] = 34
+RAM[5] = 56
+RAM[6] = 89
+RAM[7] = 23
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 6299.918 ; gain = 0.000 ; free physical = 245 ; free virtual = 9760
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sorting_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj sorting_top_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/ram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/regn.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regn
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sorting_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sorting_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto a63f2c10d0fb4459b8a24459d2516063 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sorting_top_tb_behav xil_defaultlib.sorting_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port d [/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/datapath.sv:53]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.RAM(addr_width=4)
+Compiling module xil_defaultlib.regn(N=8)
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.sorting_top
+Compiling module xil_defaultlib.sorting_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sorting_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+RAM contents before sorting:
+RAM contents:
+RAM[0] = 67
+RAM[1] = 0
+RAM[2] = 12
+RAM[3] = 78
+RAM[4] = 34
+RAM[5] = 56
+RAM[6] = 89
+RAM[7] = 23
+relaunch_sim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 6305.695 ; gain = 5.777 ; free physical = 211 ; free virtual = 9721
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sorting_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj sorting_top_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/ram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/regn.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regn
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sorting_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sorting_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto a63f2c10d0fb4459b8a24459d2516063 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sorting_top_tb_behav xil_defaultlib.sorting_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port d [/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/datapath.sv:53]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.RAM(addr_width=4)
+Compiling module xil_defaultlib.regn(N=8)
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.sorting_top
+Compiling module xil_defaultlib.sorting_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sorting_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+RAM contents before sorting:
+RAM contents:
+RAM[0] = 67
+RAM[1] = 0
+RAM[2] = 12
+RAM[3] = 78
+RAM[4] = 34
+RAM[5] = 56
+RAM[6] = 89
+RAM[7] = 23
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 6311.688 ; gain = 0.000 ; free physical = 170 ; free virtual = 9682
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sorting_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj sorting_top_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/ram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/regn.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regn
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sorting_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sorting_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto a63f2c10d0fb4459b8a24459d2516063 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sorting_top_tb_behav xil_defaultlib.sorting_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port d [/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/datapath.sv:53]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.RAM(addr_width=4)
+Compiling module xil_defaultlib.regn(N=8)
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.sorting_top
+Compiling module xil_defaultlib.sorting_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sorting_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+RAM contents before sorting:
+RAM contents:
+RAM[0] = 67
+RAM[1] = 45
+RAM[2] = 12
+RAM[3] = 78
+RAM[4] = 34
+RAM[5] = 56
+RAM[6] = 89
+RAM[7] = 23
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sorting_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj sorting_top_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/ram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/regn.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regn
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sorting_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sorting_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto a63f2c10d0fb4459b8a24459d2516063 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sorting_top_tb_behav xil_defaultlib.sorting_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port d [/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/datapath.sv:53]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.RAM(addr_width=4)
+Compiling module xil_defaultlib.regn(N=8)
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.sorting_top
+Compiling module xil_defaultlib.sorting_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sorting_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+RAM contents before sorting:
+RAM contents:
+RAM[0] = 67
+RAM[1] = 45
+RAM[2] = 12
+RAM[3] = 78
+RAM[4] = 34
+RAM[5] = 56
+RAM[6] = 89
+RAM[7] = 23
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sorting_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj sorting_top_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/ram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/regn.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regn
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sorting_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sorting_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto a63f2c10d0fb4459b8a24459d2516063 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sorting_top_tb_behav xil_defaultlib.sorting_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port d [/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/datapath.sv:53]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.RAM(addr_width=4)
+Compiling module xil_defaultlib.regn(N=8)
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.sorting_top
+Compiling module xil_defaultlib.sorting_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sorting_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+RAM contents before sorting:
+RAM contents:
+RAM[0] = 67
+RAM[1] = 45
+RAM[2] = 12
+RAM[3] = 78
+RAM[4] = 34
+RAM[5] = 56
+RAM[6] = 89
+RAM[7] = 23
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sorting_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj sorting_top_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/ram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/regn.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regn
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sorting_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sorting_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto a63f2c10d0fb4459b8a24459d2516063 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sorting_top_tb_behav xil_defaultlib.sorting_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port d [/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/datapath.sv:53]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.RAM(addr_width=4)
+Compiling module xil_defaultlib.regn(N=8)
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.sorting_top
+Compiling module xil_defaultlib.sorting_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sorting_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+RAM contents before sorting:
+RAM contents:
+RAM[0] = 67
+RAM[1] = 45
+RAM[2] = 12
+RAM[3] = 78
+RAM[4] = 34
+RAM[5] = 56
+RAM[6] = 89
+RAM[7] = 23
+relaunch_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 6407.730 ; gain = 0.000 ; free physical = 866 ; free virtual = 10178
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sorting_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj sorting_top_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/ram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/regn.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regn
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sorting_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sorting_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto a63f2c10d0fb4459b8a24459d2516063 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sorting_top_tb_behav xil_defaultlib.sorting_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port d [/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/datapath.sv:53]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.RAM(addr_width=4)
+Compiling module xil_defaultlib.regn(N=8)
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.sorting_top
+Compiling module xil_defaultlib.sorting_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sorting_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+RAM contents before sorting:
+RAM contents:
+RAM[0] = 67
+RAM[1] = 45
+RAM[2] = 12
+RAM[3] = 78
+RAM[4] = 34
+RAM[5] = 56
+RAM[6] = 89
+RAM[7] = 23
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sorting_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj sorting_top_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/ram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/regn.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regn
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sorting_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sorting_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto a63f2c10d0fb4459b8a24459d2516063 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sorting_top_tb_behav xil_defaultlib.sorting_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port d [/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/datapath.sv:53]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.RAM(addr_width=4)
+Compiling module xil_defaultlib.regn(N=8)
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.sorting_top
+Compiling module xil_defaultlib.sorting_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sorting_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+RAM contents before sorting:
+RAM contents:
+RAM[0] = 67
+RAM[1] = 45
+RAM[2] = 12
+RAM[3] = 78
+RAM[4] = 34
+RAM[5] = 56
+RAM[6] = 89
+RAM[7] = 23
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 6439.766 ; gain = 0.000 ; free physical = 815 ; free virtual = 10124
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sorting_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj sorting_top_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/ram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/regn.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regn
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sorting_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sorting_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto a63f2c10d0fb4459b8a24459d2516063 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sorting_top_tb_behav xil_defaultlib.sorting_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port d [/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/datapath.sv:53]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.RAM(addr_width=4)
+Compiling module xil_defaultlib.regn(N=8)
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.sorting_top
+Compiling module xil_defaultlib.sorting_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sorting_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+RAM contents before sorting:
+RAM contents:
+RAM[0] = 67
+RAM[1] = 45
+RAM[2] = 12
+RAM[3] = 78
+RAM[4] = 34
+RAM[5] = 56
+RAM[6] = 89
+RAM[7] = 23
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sorting_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj sorting_top_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/ram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/regn.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regn
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sorting_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sorting_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto a63f2c10d0fb4459b8a24459d2516063 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sorting_top_tb_behav xil_defaultlib.sorting_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port d [/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/datapath.sv:53]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.RAM(addr_width=4)
+Compiling module xil_defaultlib.regn(N=8)
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.sorting_top
+Compiling module xil_defaultlib.sorting_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sorting_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+RAM contents before sorting:
+RAM contents:
+RAM[0] = 67
+RAM[1] = 45
+RAM[2] = 12
+RAM[3] = 78
+RAM[4] = 34
+RAM[5] = 56
+RAM[6] = 89
+RAM[7] = 23
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sorting_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj sorting_top_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/ram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/regn.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regn
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sorting_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sorting_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto a63f2c10d0fb4459b8a24459d2516063 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sorting_top_tb_behav xil_defaultlib.sorting_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port d [/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/datapath.sv:53]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.RAM(addr_width=4)
+Compiling module xil_defaultlib.regn(N=8)
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.sorting_top
+Compiling module xil_defaultlib.sorting_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sorting_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+RAM contents before sorting:
+RAM contents:
+RAM[0] = 67
+RAM[1] = 45
+RAM[2] = 12
+RAM[3] = 78
+RAM[4] = 34
+RAM[5] = 56
+RAM[6] = 89
+RAM[7] = 23
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sorting_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj sorting_top_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/ram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/regn.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regn
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sorting_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sorting_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto a63f2c10d0fb4459b8a24459d2516063 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sorting_top_tb_behav xil_defaultlib.sorting_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port d [/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/datapath.sv:53]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.RAM(addr_width=4)
+Compiling module xil_defaultlib.regn(N=8)
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.sorting_top
+Compiling module xil_defaultlib.sorting_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sorting_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+RAM contents before sorting:
+RAM contents:
+RAM[0] = 67
+RAM[1] = 45
+RAM[2] = 12
+RAM[3] = 78
+RAM[4] = 34
+RAM[5] = 56
+RAM[6] = 89
+RAM[7] = 23
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sorting_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj sorting_top_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/ram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/regn.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regn
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sorting_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sorting_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto a63f2c10d0fb4459b8a24459d2516063 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sorting_top_tb_behav xil_defaultlib.sorting_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port d [/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/datapath.sv:53]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.RAM(addr_width=4)
+Compiling module xil_defaultlib.regn(N=8)
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.sorting_top
+Compiling module xil_defaultlib.sorting_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sorting_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+RAM contents before sorting:
+RAM contents:
+RAM[0] = 45
+RAM[1] = 12
+RAM[2] = 78
+RAM[3] = 34
+RAM[4] = 56
+RAM[5] = 89
+RAM[6] = 23
+RAM[7] = 67
+run 10 us
+Sorting completed.
+RAM contents after sorting:
+RAM contents:
+RAM[0] = 12
+RAM[1] = 23
+RAM[2] = 34
+RAM[3] = 45
+RAM[4] = 56
+RAM[5] = 67
+RAM[6] = 78
+RAM[7] = 89
+$finish called at time : 1880 ns : File "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top_tb.sv" Line 133
+save_wave_config {/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top_tb_behav.wcfg}
+save_wave_config {/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top_tb_behav.wcfg}

@@ -1,0 +1,12 @@
+0.6
+2018.2
+Jun 14 2018
+20:07:38
+/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/controller.sv,1740113315,systemVerilog,,/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/counter.sv,,controller,,,,,,,,
+/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/counter.sv,1740038140,systemVerilog,,/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/datapath.sv,,counter,,,,,,,,
+/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/datapath.sv,1740112407,systemVerilog,,/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/ram.sv,,datapath,,,,,,,,
+/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/ram.sv,1740114191,systemVerilog,,/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/regn.sv,,RAM,,,,,,,,
+/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/regn.sv,1740113727,systemVerilog,,/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top.sv,,regn,,,,,,,,
+/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim/glbl.v,1740038140,verilog,,,,glbl,,,,,,,,
+/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top.sv,1740038140,systemVerilog,,/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top_tb.sv,,sorting_top,,,,,,,,
+/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top_tb.sv,1740113206,systemVerilog,,,,sorting_top_tb,,,,,,,,
