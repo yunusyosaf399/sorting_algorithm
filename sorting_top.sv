@@ -1,5 +1,5 @@
 module sorting_top #(
-    parameter N = 8,
+    parameter N = 16,
     parameter L = 4
 )(
     input wire clk,

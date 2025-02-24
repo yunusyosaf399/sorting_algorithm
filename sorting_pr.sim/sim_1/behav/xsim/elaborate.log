@@ -4,6 +4,18 @@ Running: /opt/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto a63f2c10d0fb
 Using 8 slave threads.
 Starting static elaboration
 WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port d [/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/datapath.sv:53]
+WARNING: [VRFC 10-1783] select index 4 into predefined_values is out of bounds [/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top_tb.sv:43]
+WARNING: [VRFC 10-1783] select index 5 into predefined_values is out of bounds [/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top_tb.sv:44]
+WARNING: [VRFC 10-1783] select index 6 into predefined_values is out of bounds [/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top_tb.sv:45]
+WARNING: [VRFC 10-1783] select index 7 into predefined_values is out of bounds [/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top_tb.sv:46]
+WARNING: [VRFC 10-1783] select index 8 into predefined_values is out of bounds [/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top_tb.sv:47]
+WARNING: [VRFC 10-1783] select index 9 into predefined_values is out of bounds [/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top_tb.sv:48]
+WARNING: [VRFC 10-1783] select index 10 into predefined_values is out of bounds [/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top_tb.sv:49]
+WARNING: [VRFC 10-1783] select index 11 into predefined_values is out of bounds [/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top_tb.sv:50]
+WARNING: [VRFC 10-1783] select index 12 into predefined_values is out of bounds [/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top_tb.sv:51]
+WARNING: [VRFC 10-1783] select index 13 into predefined_values is out of bounds [/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top_tb.sv:52]
+WARNING: [VRFC 10-1783] select index 14 into predefined_values is out of bounds [/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top_tb.sv:53]
+WARNING: [VRFC 10-1783] select index 15 into predefined_values is out of bounds [/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top_tb.sv:54]
 Completed static elaboration
 Starting simulation data flow analysis
 WARNING: [XSIM 43-4100] "/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_pr.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
@@ -12,7 +24,7 @@ Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.controller
 Compiling module xil_defaultlib.counter
 Compiling module xil_defaultlib.RAM(addr_width=4)
-Compiling module xil_defaultlib.regn(N=8)
+Compiling module xil_defaultlib.regn
 Compiling module xil_defaultlib.datapath
 Compiling module xil_defaultlib.sorting_top
 Compiling module xil_defaultlib.sorting_top_tb

@@ -36,3 +36,23 @@ relaunch_sim
 run 10 us
 save_wave_config {/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top_tb_behav.wcfg}
 save_wave_config {/home/younas/Documents/Sorting_Alg/sorting_algorithm/sorting_v1_4/sorting_top_tb_behav.wcfg}
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 10 us
+run 10 us
+relaunch_sim
+run 10 us
+run 10 us
+relaunch_sim
+run 10 us
+run 10 us
+relaunch_sim
+run 10 us

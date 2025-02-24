@@ -1,6 +1,6 @@
 module RAM #(
-    parameter addr_width = 2,  // Address width (2 bits, 4 locations)
-    parameter data_width = 8   // Data width (8 bits per location)
+    parameter addr_width = 3,  // Address width (2 bits, 4 locations)
+    parameter data_width = 16   // Data width (8 bits per location)
 )(
     input wire clk,                     // Clock signal
     input wire rst,                     // Reset signal

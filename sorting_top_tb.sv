@@ -1,7 +1,7 @@
 module sorting_top_tb;
 
     // Parameters
-    parameter N = 8; // Width of data
+    parameter N = 16; // Width of data
     parameter L = 4; // Width of counters and address
 
     // Testbench signals
@@ -13,7 +13,7 @@ module sorting_top_tb;
     wire done;
 
     // Predefined values
-    reg [N-1:0] predefined_values [7:0];
+    reg [N-1:0] predefined_values [L-1:0];
 
     // Clock generation
     initial begin
@@ -44,14 +44,22 @@ module sorting_top_tb;
         predefined_values[5] = 8'd89;
         predefined_values[6] = 8'd23;
         predefined_values[7] = 8'd67;
+        predefined_values[8] = 8'd44;
+        predefined_values[9] = 8'd67;
+        predefined_values[10]= 8'd10;
+        predefined_values[11]= 8'd2;
+        predefined_values[12]= 8'd9;
+        predefined_values[13]= 8'd90;
+        predefined_values[14]= 8'd11;
+        predefined_values[15]= 8'd66;
     end
 
     // Task to initialize RAM with predefined values
     task initialize_ram;
-        input [N-1:0] data [0:7];
+        input [N-1:0] data [0:15];
         integer i;
         begin
-            for (i = 0; i < 8; i = i + 1) begin
+            for (i = 0; i < 16; i = i + 1) begin
                 WrInit = 1'b1;
                 RAddr = i;
                 DataIn = data[i];
@@ -83,7 +91,7 @@ module sorting_top_tb;
     // Testbench logic
     initial begin
         // Test data for sorting
-        reg [N-1:0] test_data [0:7];
+        reg [N-1:0] test_data [0:15];
         test_data[0] = 8'd45;
         test_data[1] = 8'd12;
         test_data[2] = 8'd78;
@@ -92,6 +100,15 @@ module sorting_top_tb;
         test_data[5] = 8'd89;
         test_data[6] = 8'd23;
         test_data[7] = 8'd67;
+        test_data[8] = 8'd44;
+        test_data[9] = 8'd101;
+        test_data[10] = 8'd10;
+        test_data[11] = 8'd2;
+        test_data[12] = 8'd9;
+        test_data[13] = 8'd90;
+        test_data[14] = 8'd11;
+        test_data[15] = 8'd66;
+        
 
         // Initialize signals
         rst = 1;        // Assert reset

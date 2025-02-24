@@ -1,5 +1,5 @@
 module datapath #( 
-    parameter N = 8, // Width of data
+    parameter N = 16, // Width of data
     parameter L = 4  // Width of counters and address
 ) (
     input wire clk,           // Clock signal
@@ -28,7 +28,7 @@ module datapath #(
 );
 
     // Local parameter for counter limits
-    localparam K = 8;
+    localparam K = 16;
 
     // Internal signals
     wire [L-1:0] cntr_i, cntr_j, mux1_out, mux2_out, addr;
