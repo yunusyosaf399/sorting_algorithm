@@ -21,9 +21,6 @@ This project implements a hardware-based **sorting algorithm** using Verilog, fe
 # FSM Controller
 ![FSM Controller](images/FSM_Controller.jpeg)
 
-# Datapath
-![Data Path](images/datapath.jpeg)
-
 ## 🚀 How It Works
 
 1. **Initialization**:  
